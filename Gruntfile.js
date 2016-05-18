@@ -127,7 +127,7 @@ module.exports = function (grunt)
 
       grunt.registerTask ('test:dev', ['karma:dev']);
 
-      grunt.registerTask ('test:e2e', ['connect:test', 'protractor_webdriver', 'protractor:chrome']);
+      grunt.registerTask ('test:e2e', ['connect:test', 'protractor_webdriver', 'protractor:firefox']);
 
       grunt.registerTask ('default', ['serve']);
 };
