@@ -124,7 +124,7 @@ module.exports = function (grunt)
 
     grunt.registerTask('verify', ['jshint:verify', 'connect:test', 'protractor_webdriver', 'protractor:firefox']);
 
-    grunt.registerTask('test:e2e', ['connect:test',/* 'protractor_webdriver',*/ 'protractor:firefox']);
+    grunt.registerTask('test:e2e', ['connect:test', /*'protractor_webdriver',*/ 'protractor:firefox']);
 
     grunt.registerTask('default', ['serve']);
 
