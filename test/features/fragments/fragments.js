@@ -27,12 +27,12 @@ var fragments = function (text)
     'use strict';
 
     var mapping = {
-        button: element,
-        type: element,
-        fifa: element,
-        rank: element,
-        team: element,
-        totalPoints: element
+        button: element.bind(null, by.css('.btn')),
+        type: element.bind(null, by.css('fifa.type')),
+        fifa: element.bind(null, by.css('.table')),
+        rank: element.bind(null, by.css('td:nth-of-type(1)')),
+        team: element.bind(null, by.css('td:nth-of-type(2)')),
+        totalPoints: element.bind(null, by.css('td:nth-of-type(3)'))
 
 
     };
